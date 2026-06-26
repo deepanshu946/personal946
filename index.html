@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title><h2>Our Journey Together ❤️</h2></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Floating petals background -->
+  <div class="petals-bg" aria-hidden="true" id="petals-bg"></div>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-inner">
+      <div class="months-badge">5 Months ❤️</div>
+      <!-- <h1 class="title">Happy <em>Five</em> Months,<br>My Love</h1> -->
+       <h1 class="title" id="hero-title">Happy <span class="five-highlight">FIVE</span> Months, <em>My Love</em></h1>
+      <p class="subtitle">Every single day with you is the best day of my life.</p>
+      <div id="timer" class="timer" aria-live="polite">
+        <span class="timer-unit"><span class="timer-num" id="t-days">000</span><span class="timer-label">days</span></span>
+        <span class="timer-sep">:</span>
+        <span class="timer-unit"><span class="timer-num" id="t-hours">00</span><span class="timer-label">hours</span></span>
+        <span class="timer-sep">:</span>
+        <span class="timer-unit"><span class="timer-num" id="t-mins">00</span><span class="timer-label">mins</span></span>
+        <span class="timer-sep">:</span>
+        <span class="timer-unit"><span class="timer-num" id="t-secs">00</span><span class="timer-label">secs</span></span>
+      </div>
+      <p class="timer-caption">...and counting</p>
+      <button id="show-timeline" class="btn btn-primary">
+        <span>See Our Journey</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </button>
+    </div>
+
+    <!-- Decorative hearts -->
+    <div class="deco-hearts" aria-hidden="true">
+      <span class="dh dh1">♥</span>
+      <span class="dh dh2">♡</span>
+      <span class="dh dh3">❤</span>
+      <span class="dh dh4">♥</span>
+      <span class="dh dh5">♡</span>
+      <span class="dh dh6">❤</span>
+      <span class="dh dh7">♥</span>
+      <span class="dh dh8">♡</span>
+    </div>
+    <!-- Hanging Polaroids -->
+    <div class="hero-polaroids" aria-hidden="true">
+
+      <!-- Left Polaroid -->
+      <div class="hanging-photo left-photo">
+        <div class="tape"></div>
+
+        <div class="polaroid-frame">
+          <img src="images/hero1.png" alt="Our Memory">
+          <p>If only these little versions of us knew what the future had planned.(Dec 2018)❤️</p>
+        </div>
+      </div>
+
+      <!-- Right Polaroid -->
+      <div class="hanging-photo right-photo">
+        <div class="tape"></div>
+
+        <div class="polaroid-frame">
+          <img src="images/hero2.jpg" alt="Our Memory">
+          <p>Years later, we found ourselves exactly where we were meant to be.(Mar 2026)✨</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <!-- Hidden Collectibles -->
+
+<div class="collectible glow-heart"
+     data-id="1"
+     data-letter="L"
+     aria-label="Hidden Heart">
+    ❤️
+</div>
+
+<div class="collectible butterfly"
+     data-id="2"
+     data-letter="O"
+     aria-label="Hidden Butterfly">
+    🦋
+</div>
+
+<div class="collectible sparkle"
+     data-id="3"
+     data-letter="V"
+     aria-label="Hidden Star">
+    ✨
+</div>
+
+<div class="collectible flower"
+     data-id="4"
+     data-letter="E"
+     aria-label="Hidden Flower">
+    🌸
+</div>
+
+<div class="collectible envelope"
+     data-id="5"
+     data-letter="♥"
+     aria-label="Hidden Letter">
+    💌
+</div>
+<!-- Hidden Kiss Memories -->
+<div class="kiss-memory kiss-1" data-image="images/kiss1.jpg" aria-label="Hidden Memory">💋</div>
+
+<div class="kiss-memory kiss-2" data-image="images/kiss2.jpg" aria-label="Hidden Memory">💋</div>
+
+<div class="kiss-memory kiss-3" data-image="images/kiss3.jpg" aria-label="Hidden Memory">💋</div>
+
+<div class="kiss-memory kiss-4" data-image="images/kiss4.jpg" aria-label="Hidden Memory">💋</div>
+
+<div class="kiss-memory kiss-5" data-image="images/kiss5.jpg" aria-label="Hidden Memory">💋</div>
+  <!-- HINT BANNER -->
+  <div class="hint-banner">
+    <p> Think you've explored everything? Look a little closer... I might've hidden a few surprises just for you. 👀</p>
+    <div class="hint-progress" aria-label="Hints found">
+      <span class="hp" id="hp1">♡</span>
+      <span class="hp" id="hp2">♡</span>
+      <span class="hp" id="hp3">♡</span>
+      <span class="hp" id="hp4">♡</span>
+      <span class="hp" id="hp5">♡</span>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="timeline hidden">
+    <div class="timeline-header">
+      <h2>The Beginning of Forever ❤️</h2>
+      <p class="timeline-sub">Every moment we've shared has become a memory I'll treasure forever. These are just a few of the countless reasons why falling in love with you has been the most beautiful part of my life.</p>
+    </div>
+
+    <div class="months-track">
+
+      <!-- Month 1 -->
+      <article class="month-card" data-month="1">
+        <div class="card-photo-wrap">
+          <div class="card-photo">
+             <img src="images/month1.jpg" alt="Our first month">
+              
+            <!-- <div class="photo-inner"> -->
+              <!-- <span class="photo-month-tag">Month 1</span> -->
+            <!-- </div> -->
+          </div>
+          <div class="month-num">01</div>
+        </div>
+        <div class="card-body">
+          <h3>The First Stare</h3>
+          <p class="card-date">Month 1 · February</p>
+          <p class="card-caption">
+            The day i could never forget. First date. The moment i realise i never wanted to look away. i wasn't just looking at you. I was seeing my favourite memory begin.
+            <!-- <button class="hint" data-letter="L" aria-label="Reveal hint 1">(hint ✨)</button> -->
+          </p>
+          <!-- <div class="hint-reveal" id="reveal-1" aria-live="polite"></div> -->
+        </div>
+        <div class="card-flowers" aria-hidden="true">🌸</div>
+      </article>
+
+      <!-- Month 2 -->
+      <article class="month-card" data-month="2">
+        <div class="card-photo-wrap">
+          <div class="card-photo placeholder-photo ph2">
+            <img src="images/month2.jpg" alt="Our first month">
+          </div>
+          <div class="month-num">02</div>
+        </div>
+        <div class="card-body">
+          <h3>First Valentine's Day</h3>
+          <p class="card-date">Month 2 · March</p>
+          <p class="card-caption">
+            Our first Valentine's Day, the first of many. Lucky enough to call this gorgeous smile mine.The day i found my forever Valentine.
+            <!-- <button class="hint" data-letter="O" aria-label="Reveal hint 2">(hint ✨)</button> -->
+          </p>
+          <!-- <div class="hint-reveal" id="reveal-2" aria-live="polite"></div> -->
+        </div>
+        <div class="card-flowers" aria-hidden="true">🌹</div>
+      </article>
+
+      <!-- Month 3 -->
+      <article class="month-card" data-month="3">
+        <div class="card-photo-wrap">
+          <div class="card-photo placeholder-photo ph3">
+            <img src="images/month3.jpg" alt="Our first month">
+          </div>
+          <div class="month-num">03</div>
+        </div>
+        <div class="card-body">
+          <h3>First Snow , First Adventure</h3>
+          <p class="card-date">Month 3 · April</p>
+          <p class="card-caption">
+            Our first trip to the mountains, your first time seeing snow, and one of my favourite memories. Watching you smile was way more beautiful than the mountains themselves. 
+            <!-- <button class="hint" data-letter="V" aria-label="Reveal hint 3">(hint ✨)</button> -->
+          </p>
+          <!-- <div class="hint-reveal" id="reveal-3" aria-live="polite"></div> -->
+        </div>
+        <div class="card-flowers" aria-hidden="true">🌷</div>
+      </article>
+
+      <!-- Month 4 -->
+      <article class="month-card" data-month="4">
+        <div class="card-photo-wrap">
+          <div class="card-photo placeholder-photo ph4">
+            <img src="images/month4.jpg" alt="Our first month">
+          </div>
+          <div class="month-num">04</div>
+        </div>
+        <div class="card-body">
+          <h3>Cheers to Us</h3>
+          <p class="card-date">Month 4 · May</p>
+          <p class="card-caption">
+            It's never about where we were, it was about who I was with. Every laugh that night with you became a memory worth remebering. You're my favourite thought now and forever<3.
+            <!-- <button class="hint" data-letter="E" aria-label="Reveal hint 4">(hint ✨)</button> -->
+          </p>
+          <!-- <div class="hint-reveal" id="reveal-4" aria-live="polite"></div> -->
+        </div>
+        <div class="card-flowers" aria-hidden="true">🌺</div>
+      </article>
+
+      <!-- Month 5 -->
+      <article class="month-card featured" data-month="5">
+        <div class="card-photo-wrap">
+          <div class="card-photo placeholder-photo ph5">
+            <img src="images/month5.jpg" alt="Our first month">
+          </div>
+          <div class="month-num">05</div>
+        </div>
+        <div class="card-body">
+          <h3>Right Where I Belong</h3>
+          <p class="card-date">Month 5 · June</p>
+          <p class="card-caption">
+            No matter how long we're apart, the moment i see you, everything feels complete again. I would find you in every lifetime. Just being with you is enough to make any day special. 
+            <!-- <button class="hint" data-letter="♥" aria-label="Reveal hint 5">(hint ✨)</button> -->
+          </p>
+          <!-- <div class="hint-reveal" id="reveal-5" aria-live="polite"></div> -->
+        </div>
+        <div class="card-flowers" aria-hidden="true">💐</div>
+      </article>
+
+    </div>
+    <!-- Memories Slider -->
+<section class="memories-section">
+
+  <h2 class="memories-title">Our Little Memories 📸</h2>
+  <p class="memories-subtitle">
+    Every picture has a story. ❤️
+  </p>
+
+  <div class="memory-slider">
+
+    <button class="slider-btn prev" id="prev-memory">
+      ❮
+    </button>
+
+    <div class="polaroid">
+
+      <img
+        id="memory-image"
+        src="images/memory1.jpg"
+        alt="Memory">
+
+      <div class="polaroid-caption" id="memory-caption">
+          Having you by my side is one of the best things that’s ever happened to me. We look the prettiest together. You’re beautiful, and I’m so grateful you’re mine.
+
+      </div>
+
+    </div>
+
+    <button class="slider-btn next" id="next-memory">
+      ❯
+    </button>
+
+  </div>
+
+</section>
+    <!-- Reason counter -->
+    <div class="reasons-section">
+      <h2 class="reasons-title">Reasons Why I Belong To You...</h2>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Made with all my love, just for you ❤️</p>
+    <p>From sharing a classroom to sharing a lifetime. We definitely have a story worth telling...</p>
+
+    <p class="footer-date">January 27, 2026 → forever ∞</p>
+  </footer>
+
+  <!-- CONFETTI -->
+  <div id="confetti" class="confetti" aria-hidden="true"></div>
+
+  <!-- HIDDEN LETTER MODAL -->
+  <div id="letter-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="letter-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <button id="close-modal" class="close" aria-label="Close letter">✕</button>
+      <div class="modal-deco" aria-hidden="true">
+        <span class="md1">❤</span><span class="md2">🌸</span><span class="md3">❤</span>
+      </div>
+      <div class="letter-word" id="letter-word">LOVE♥</div>
+      <h2 id="letter-title">A Letter For You 💌</h2>
+      <div class="letter-divider"></div>
+      <p class="letter">
+        My Sweetheart,<br>
+        It's been five months since we started dating. And i can't tell you how magical each and every single little moment felt with you. I am loving this life with you.It all feels like this is all that was missing from me. Thank you for choosing me every day and for making my heart feel so at home with you.I can’t wait to see what the future holds for us, but one thing I know for sure is that I want to keep making beautiful memories with you. I love you more than words can fully express, and I’m so lucky to call you mine. Look love we are together. I got to love you indefinitely now. We made it dear. I got the girl of my dreams. And i promise you i will do whatever it takes to keep a smile on your face. You're my forever addiction. My human med. My Love, My Life. I didn't know what love looked like back when i saw you for the first time. But i'll spend forever looking at you the way i unknowingly did that day.
+        I didn't just fall in love with you, I learned what love meant because of you. My heart never wants to look anywhere else. I only ever loved one girl, and i still fall in love with her every single day of my life. You really are the one for me. I've never seen you smile as full as it is now. You deserve everything in the world. I will get it all for you and just you. 
+        I love the way you laugh. I love how you make me feel seen. I love every single moment I get to spend beside you.
+        Here's to five months, and every month after that.
+        
+
+        <em>I Love You Jaan, now and forever. ♥</em>
+      </p>
+      <div class="letter-divider"></div>
+      <button class="btn btn-primary" onclick="document.getElementById('letter-modal').classList.add('hidden')">Hold this close 💌</button>
+    </div>
+  </div>
+  <!-- Hidden Memory Popup -->
+  <div id="memory-popup" class="memory-popup hidden">
+
+      <div class="memory-popup-backdrop"></div>
+
+      <div class="memory-popup-card">
+          <span class="floating-heart">❤️</span>
+          <span class="floating-heart">❤️</span>
+          <span class="floating-heart">❤️</span>
+
+          <div class="memory-border">
+
+              <img
+                  id="popup-memory-image"
+                  src=""
+                  alt="Hidden Memory">
+
+          </div>
+
+      </div>
+
+  </div>
+</div>
+  <!-- Cursor Trail Layer -->
+  <div id="cursor-trail" aria-hidden="true"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
