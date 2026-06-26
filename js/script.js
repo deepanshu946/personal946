@@ -33,7 +33,7 @@
     { emoji: '❤️', text: "Because my heart feels full and happy the day i made you mine. " },
     { emoji: '🫂', text: "Because seeing you smile has been my dream since childhood and now i get to be the reason behind it. " },
     { emoji: '✨', text: "Because loving you feels less like a decision or burden and more like destiny. " },
-    { emoji: '💌', text: "Because you turned a boy with a silent crush into a man who is now not sfraid to love you loudly." },
+    { emoji: '💌', text: "Because you turned a boy with a silent crush into a man who is now not afraid to love you loudly." },
     { emoji: '🌙', text: "Because since you I can not imagine my future without your name written all over it." },
     { emoji: '∞', text: "Because you and I were connected long before we realised it. " },
   ];
