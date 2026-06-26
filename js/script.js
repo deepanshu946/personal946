@@ -20,99 +20,13 @@
   /* ─── CONFIG — Edit these ─────────────────────────────────────── */
   // Set to your actual relationship start date (year, month-1, day)
   const START_DATE = new Date(2026, 0, 27 , 6 , 19); // 2026-01-26
-  const memories = [
-
-{
-    image:"images/memory1.JPG",
-    caption:"Having you by my side is one of the best things that’s ever happened to me. We look the prettiest together. You’re beautiful, and I’m so grateful you’re mine. "
-},
-
-{
-    image:"images/memory2.jpg",
-    caption:"Baby look i got you flowers. I never held a bouquet in my entire life and I promise I’ll always be the one holding one for you. "
-},
-
-{
-    image:"images/memory3.JPG",
-    caption:"This picture is the reason I’ll keep buying you flowers for the rest of my life. The flowers were for you, but your smile became my gift."
-},
-
-{
-    image:"images/memory4.JPG",
-    caption:"Smiling because we found each other closer than ever. You're my favourite thought of the morning. I can't stop thinking how perfect we look together. We were so meant to be."
-},
-{
-    image:"images/memory5.jpg",
-    caption:"The first date.Holding your hand throughout the night gave me a feeling I’ll never forget. I still remember how right everything felt."
-},
-
-{
-    image:"images/memory6.jpg",
-    caption:"A little clay, a lot of laughter, and another reason to fall for you all over again. Since the day i saw you, every little thing about you has made me fall deeper in love with you."
-},
-
-{
-    image:"images/memory7.jpg",
-    caption:"I promise you my love i would always find weird ways to show my love to you and make you feel special and loved. i love loving you."
-},
-{
-    image:"images/memory8.jpg",
-    caption:"POV: She caught me admiring her again. I could spend a lifetime looking at you and still not be done admiring you. You look surprised. I was just wondering how i got so lucky. "
-},
-
-{
-    image:"images/memory9.jpg",
-    caption:"I never knew a person could feel so much like peace. I can never thank you enough for loving me more than i could ever imagine. You really are my sunshine. i love you "
-},
-
-{
-    image:"images/memory10.jpg",
-    caption:"Who's the cutest couple on Earth? I smile the widest when I’m with you. You deserve everything in the world and more."
-},
-
-{
-    image:"images/memory11.jpg",
-    caption:"My lil PK(Pretty Queen). A fun trip indeed. I got my best view. My smile. My happiness. All in you. I feel so blessed."
-},
-{
-    image:"images/memory12.JPG",
-    caption:"Look who's photobombing my pics since childhood. Look who's killing me with her eyes since childhood. Oh it's you. It has always been you love. "
-},
-
-{
-    image:"images/memory13.jpg",
-    caption:"The moment i am living now was all once a dream. Back then, I was the boy silently crushing on the girl who used to sit with everyday. Today, the girl i loved since i was a kid finally became the love of my life. From classmates to soulmates. We did it. "
-},
-
-{
-    image:"images/memory14.jpg",
-    caption:"Just realised i can always use your smile as my biggest flex. My biggest win. Your laugh is my peace. This is exactly where I was meant to be."
-},
-
-{
-    image:"images/memory15.JPG",
-    caption:"And how can we forget the first member of our lil family. You holding our lil one in your arms makes me feel nothing but how good of a mom you're gonna be. Dumbo told me one day that he loves you a lot lot much and that you take good care of him. "
-},
-{
-    image:"images/memory16.jpg",
-    caption:"You using me as your canvas. Tiny doodles turned into my favourite memory. I think I am in love with you. "
-},
-
-{
-    image:"images/memory17.jpg",
-    caption:"Oh and how can i not mention these gorgeous eyes. I still don't know what magic lives in your eyes. I just know that everytime i look into them, the world starts to disappear. I'd choose to get lost in your eyes in every lifetime, until eternity."
-},
-
-{
-    image:"images/memory18.JPG",
-    caption:"I never thought I'd be the kind of guy who'd do all this. You turned me into a lover boy. I am cupid for you. I forever will be. MY FOREVER LOVE <3 "
-},
-
-{
-    image:"images/memory19.JPG",
-    caption:"My entire gallery is filled with your smiles. Do i like it?? I fucking love it. I hope I never ever stop being the reason behind this smile. Even as a kid i wanted nothing but this. Today, I get to be a part of it. "
-},
-];
+  // Load memories from hidden HTML instead of storing them in JavaScript.
+  const memories = Array.from(
+    document.querySelectorAll('#memory-data .memory-item')
+  ).map(item => ({
+    image: item.dataset.image,
+    caption: item.dataset.caption
+  }));
   const REASONS = [
     { emoji: '😂', text: "Because you're the only who makes me laugh even on my worst days. "},
     { emoji: '👀', text: "Because the first eyes i ever got lost in were yours.. and they'll be the last."},
@@ -128,12 +42,15 @@
 
   let current=0;
 
-  function updateMemory(){
+  function updateMemory() {
+    if (!memories.length) return;
 
-      img.src=memories[current].image;
-      cap.textContent=memories[current].caption;
-
+    img.src = memories[current].image;
+    cap.textContent = memories[current].caption;
   }
+
+  // Show the first memory on page load.
+  updateMemory();
 
   document.getElementById("next-memory").onclick=()=>{
 
