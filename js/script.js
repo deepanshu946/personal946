@@ -104,7 +104,7 @@
 },
 
 {
-    image:"images/memory18.jpg",
+    image:"images/memory18.JPG",
     caption:"I never thought I'd be the kind of guy who'd do all this. You turned me into a lover boy. I am cupid for you. I forever will be. MY FOREVER LOVE <3 "
 },
 
