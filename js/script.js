@@ -23,7 +23,7 @@
   const memories = [
 
 {
-    image:"images/memory1.jpg",
+    image:"images/memory1.JPG",
     caption:"Having you by my side is one of the best things that’s ever happened to me. We look the prettiest together. You’re beautiful, and I’m so grateful you’re mine. "
 },
 
@@ -33,12 +33,12 @@
 },
 
 {
-    image:"images/memory3.jpg",
+    image:"images/memory3.JPG",
     caption:"This picture is the reason I’ll keep buying you flowers for the rest of my life. The flowers were for you, but your smile became my gift."
 },
 
 {
-    image:"images/memory4.jpg",
+    image:"images/memory4.JPG",
     caption:"Smiling because we found each other closer than ever. You're my favourite thought of the morning. I can't stop thinking how perfect we look together. We were so meant to be."
 },
 {
@@ -75,7 +75,7 @@
     caption:"My lil PK(Pretty Queen). A fun trip indeed. I got my best view. My smile. My happiness. All in you. I feel so blessed."
 },
 {
-    image:"images/memory12.jpg",
+    image:"images/memory12.JPG",
     caption:"Look who's photobombing my pics since childhood. Look who's killing me with her eyes since childhood. Oh it's you. It has always been you love. "
 },
 
@@ -90,7 +90,7 @@
 },
 
 {
-    image:"images/memory15.jpg",
+    image:"images/memory15.JPG",
     caption:"And how can we forget the first member of our lil family. You holding our lil one in your arms makes me feel nothing but how good of a mom you're gonna be. Dumbo told me one day that he loves you a lot lot much and that you take good care of him. "
 },
 {
@@ -109,7 +109,7 @@
 },
 
 {
-    image:"images/memory19.jpg",
+    image:"images/memory19.JPG",
     caption:"My entire gallery is filled with your smiles. Do i like it?? I fucking love it. I hope I never ever stop being the reason behind this smile. Even as a kid i wanted nothing but this. Today, I get to be a part of it. "
 },
 ];
